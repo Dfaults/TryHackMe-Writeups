@@ -1,16 +1,18 @@
-<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9a88b741fd89551e0e041d3021c8ad8f.png" width="100" height="100" align="left">
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9a88b741fd89551e0e041d3021c8ad8f.png" width="200" height="200" align="left">
 
 # Network Security Solutions
 
 ### Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation
 
+### If you want to check out the room [click here](https://tryhackme.com/room/redteamnetsec)
+
 #
 
 ### Table of Contents
 
-
 - [Network Security Solutions](#network-security-solutions)
     - [Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation](#learn-about-and-experiment-with-various-idsips-evasion-techniques-such-as-protocol-and-payload-manipulation)
+    - [If you want to check out the room click here](#if-you-want-to-check-out-the-room-click-here)
     - [Table of Contents](#table-of-contents)
 - [Task 1 Introduction](#task-1-introduction)
     - [What does an Ips stand for?](#what-does-an-ips-stand-for)
