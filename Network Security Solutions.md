@@ -1,3 +1,5 @@
+![Background](https://assets.tryhackme.com/room-banners/evasion.png)
+
 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9a88b741fd89551e0e041d3021c8ad8f.png" width="200" height="200" align="left">
 
 # Network Security Solutions
@@ -30,6 +32,11 @@
     - [Which of the above three arguments would return meaningful results when scanning MACHINE_IP?](#which-of-the-above-three-arguments-would-return-meaningful-results-when-scanning-machine_ip)
     - [What is the option in hping3 to set a custom TCP window size?](#what-is-the-option-in-hping3-to-set-a-custom-tcp-window-size)
 - [Task 5 Evasion via Payload Manipulation](#task-5-evasion-via-payload-manipulation)
+    - [Using base64 encoding, what is the transformation of cat /etc/passwd?](#using-base64-encoding-what-is-the-transformation-of-cat-etcpasswd)
+    - [The base32 encoding of a particular string is NZRWC5BAFVWCAOBQHAYAU===. What is the original string?](#the-base32-encoding-of-a-particular-string-is-nzrwc5bafvwcaobqhayau-what-is-the-original-string)
+    - [Using the provided openssl command above. You created a certificate, which we gave the extension .crt, and a private key, which we gave the extension .key. What is the first line in the certificate file?](#using-the-provided-openssl-command-above-you-created-a-certificate-which-we-gave-the-extension-crt-and-a-private-key-which-we-gave-the-extension-key-what-is-the-first-line-in-the-certificate-file)
+    - [What is the last line in the private key file?](#what-is-the-last-line-in-the-private-key-file)
+    - [On the attached machine from the previous task, browse to <http://MACHINE_IP:8080>, where you can write your Linux commands. Note that no output will be returned. A command like ncat -lvnp 1234 -e /bin/bash will create a bind shell that you can connect to it from the AttackBox using ncat MACHINE_IP 1234; however, some IPS is filtering out the command we are submitting on the form. Using one of the techniques mentioned in this task, try to adapt the command typed in the form to run properly. Once you connect to the bind shell using ncat MACHINE_IP 1234, find the user’s name](#on-the-attached-machine-from-the-previous-task-browse-to-httpmachine_ip8080-where-you-can-write-your-linux-commands-note-that-no-output-will-be-returned-a-command-like-ncat--lvnp-1234--e-binbash-will-create-a-bind-shell-that-you-can-connect-to-it-from-the-attackbox-using-ncat-machine_ip-1234-however-some-ips-is-filtering-out-the-command-we-are-submitting-on-the-form-using-one-of-the-techniques-mentioned-in-this-task-try-to-adapt-the-command-typed-in-the-form-to-run-properly-once-you-connect-to-the-bind-shell-using-ncat-machine_ip-1234-find-the-users-name)
 - [Task 6 Evasion via Route Manipulation](#task-6-evasion-via-route-manipulation)
 - [Task 7 Evasion via Tactical DoS](#task-7-evasion-via-tactical-dos)
 - [Task 8 C2 and IDS/IPS Evasion](#task-8-c2-and-idsips-evasion)
@@ -89,6 +96,24 @@
     -w
 
 # Task 5 Evasion via Payload Manipulation
+
+### Using base64 encoding, what is the transformation of cat /etc/passwd?
+
+    Y2F0IC9ldGMvcGFzc3dkCg==
+
+### The base32 encoding of a particular string is NZRWC5BAFVWCAOBQHAYAU===. What is the original string?
+
+    ncat -l 8080
+
+### Using the provided openssl command above. You created a certificate, which we gave the extension .crt, and a private key, which we gave the extension .key. What is the first line in the certificate file?
+
+    -----BEGIN CERTIFICATE-----
+
+### What is the last line in the private key file?
+
+    -----END PRIVATE KEY-----
+
+### On the attached machine from the previous task, browse to <http://MACHINE_IP:8080>, where you can write your Linux commands. Note that no output will be returned. A command like ncat -lvnp 1234 -e /bin/bash will create a bind shell that you can connect to it from the AttackBox using ncat MACHINE_IP 1234; however, some IPS is filtering out the command we are submitting on the form. Using one of the techniques mentioned in this task, try to adapt the command typed in the form to run properly. Once you connect to the bind shell using ncat MACHINE_IP 1234, find the user’s name
 
 # Task 6 Evasion via Route Manipulation
 
