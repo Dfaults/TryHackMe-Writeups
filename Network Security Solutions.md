@@ -117,17 +117,23 @@
 
     redteamnetsec
 > Tip: When you run the command you won't get any obvious response in the listner terminal so just write commands directly in order to get the response needed to complete the task
+
 # Task 6 Evasion via Route Manipulation
+
     http socks4
 
 # Task 7 Evasion via Tactical DoS
+
     No answer needed
 
 # Task 8 C2 and IDS/IPS Evasion
+
     jitter
 
 # Task 9 Next-Gen Security
+
     No answer needed
 
 # Task 10 Summary
+
     No answer needed
