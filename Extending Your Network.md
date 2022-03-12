@@ -45,5 +45,4 @@
 
 ### What is the flag?
 
-    THM{FIREWALLS_RULE}
-> Tip: When checking for which protocol is the correct one in order to get the flag you will have to use trial and error since there is no information provided on what protocol the packets are coming through, however the most common one used is HTTP
+> Tip: Because of THM rules for submiting wirteups i can't straigh up give you the flag so just keep in mind when checking for which protocol is the correct one in order to get the flag you will have to use trial and error since there is no information provided on what protocol the packets are coming through, however the most common one used is HTTP
