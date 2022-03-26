@@ -96,4 +96,15 @@ Also, please take care of the image file ;)
 
 When trying to acces the web server on port 62337 we can see this login page:
 
+![](2022-03-26-00-09-29.png)
 
+Credentials for the login page was just a simple guess of typical default passwords as refered to by the letter in the `-` document leaving us with access to the Codiad 2.8.4 site using
+
+```
+Username: john
+Password: password
+```
+
+While we explored the Codiad dashboard nikto was left running in the backgroud as a good measure and use of time in case any potential vulnerabilities were present.
+
+![](2022-03-26-00-12-03.png)
