@@ -1,3 +1,15 @@
+#
+
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/3ce8e9c4d1da5eefef690e11f75798c7.png" width="100" height="100" align="left">
+
+# IDE
+
+An easy box to polish your enumeration skills
+
+> The IP address seen here is relative to what is assigned by TryHackMe at the moment of starting the box and therefore can and will change for every time it's restarted so if different IPs are seen throughout the document note that this box wasn't completed in one session. If you wish to copy any of the commands shown here please change the IP to the one relevant to your current session.
+
+### Enumeration
+
 Initial nmap scan showed various open ports:
 
 ```
@@ -41,6 +53,8 @@ Nmap done: 1 IP address (1 host up) scanned in 826.85 seconds         ~13m:46s
 ```
 
 > NOTE: port 62337 will not show under a regular nmap scan due to it being over the common 1000 ports that nmap scans by default. This means that the `'-p-'` flag must be set in order for it to show up and continue with the assestmen.
+
+### Initial access
 
 The ftp server allows for anonymous login with no password giving us the chance to see a limited section of the file system as the ftp user.
 
@@ -94,9 +108,13 @@ Also, please take care of the image file ;)
 
 ```
 
+### Web server access
+
 When trying to acces the web server on port 62337 we can see this login page:
 
 ![](2022-03-26-00-09-29.png)
+
+### Web dashboard credentials
 
 Credentials for the login page was just a simple guess of typical default passwords as refered to by the letter in the `-` document leaving us with access to the Codiad 2.8.4 site using
 
@@ -108,3 +126,36 @@ Password: password
 While we explored the Codiad dashboard nikto was left running in the backgroud as a good measure and use of time in case any potential vulnerabilities were present.
 
 ![](2022-03-26-00-12-03.png)
+
+The nikto enumeration resulted in the following:
+
+```
+nikto -host http://10.10.51.26:62337/ -o nikto-enumeration.txt
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.10.51.26
++ Target Hostname:    10.10.51.26
++ Target Port:        62337
++ Start Time:         2022-03-26 00:00:08 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.29 (Ubuntu)
++ The anti-clickjacking X-Frame-Options header is not present.
++ Cookie f9c7294bc8f6035df784b56b800b122c created without the httponly flag
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server leaks inodes via ETags, header found with file /favicon.ico, fields: 0x47e 0x5c5045aa328fe 
++ DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ /config.php: PHP Config file may contain database IDs and passwords.
++ OSVDB-3268: /data/: Directory indexing found.
++ OSVDB-3092: /data/: This might be interesting...
++ OSVDB-3268: /lib/: Directory indexing found.
++ OSVDB-3092: /lib/: This might be interesting...
++ OSVDB-3092: /INSTALL.txt: Default file found.
++ OSVDB-3092: /LICENSE.txt: License file found may identify site software.
++ OSVDB-3233: /icons/README: Apache default file found.
++ Cookie 1ec459e58a8a15e1c36cd5a362f66d20 created without the httponly flag
++ 6544 items checked: 0 error(s) and 13 item(s) reported on remote host
++ End Time:           2022-03-26 00:16:40 (GMT-4) (992 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested                                                                                                                                                                                                                                  ~16m:32s 
+
+```
