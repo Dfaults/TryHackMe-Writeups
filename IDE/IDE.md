@@ -1,10 +1,10 @@
-#
-
 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/3ce8e9c4d1da5eefef690e11f75798c7.png" width="100" height="100" align="left">
 
 # IDE
 
 An easy box to polish your enumeration skills
+
+---
 
 > The IP address seen here is relative to what is assigned by TryHackMe at the moment of starting the box and therefore can and will change for every time it's restarted so if different IPs are seen throughout the document note that this box wasn't completed in one session. If you wish to copy any of the commands shown here please change the IP to the one relevant to your current session.
 
@@ -12,7 +12,7 @@ An easy box to polish your enumeration skills
 
 Initial nmap scan showed various open ports:
 
-```
+```sh
 sudo nmap -sV -sC -p- -oA nmap 10.10.51.26
 Starting Nmap 7.80 ( https://nmap.org ) at 2022-03-25 20:19 AST
 Nmap scan report for 10.10.51.26
@@ -58,7 +58,7 @@ Nmap done: 1 IP address (1 host up) scanned in 826.85 seconds         ~13m:46s
 
 The ftp server allows for anonymous login with no password giving us the chance to see a limited section of the file system as the ftp user.
 
-```
+```sh
  ftp 10.10.51.26
 Connected to 10.10.51.26.
 220 (vsFTPd 3.0.3)
@@ -112,7 +112,7 @@ Also, please take care of the image file ;)
 
 When trying to acces the web server on port 62337 we can see this login page:
 
-![](2022-03-26-00-09-29.png)
+![](../assets/2022-03-26-00-09-29.png)
 
 ### Web dashboard credentials
 
@@ -125,11 +125,11 @@ Password: password
 
 While we explored the Codiad dashboard nikto was left running in the backgroud as a good measure and use of time in case any potential vulnerabilities were present.
 
-![](2022-03-26-00-12-03.png)
+![](../assets/2022-03-26-00-12-03.png)
 
 The nikto enumeration resulted in the following:
 
-```
+```sh
 nikto -host http://10.10.51.26:62337/ -o nikto-enumeration.txt
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
