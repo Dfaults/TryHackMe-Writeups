@@ -2,6 +2,8 @@
 
 In this room we see an overview of how DNS works along with identifyng each of it's parts.
 
+##### If you want to check out the room [click here](https://tryhackme.com/room/dnsindetail)
+
 # Task 1 What is DNS?
 
 ### What does DNS stand for?
