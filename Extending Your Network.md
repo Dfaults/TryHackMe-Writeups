@@ -1,16 +1,20 @@
+![Background](https://assets.tryhackme.com/room-banners/networking.png)
+
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9fe5ec6f05396b6e9161294ddd3fb1f5.png" width="200" height="200" align="left">
+
 # Extending Your Network
 
-### Learn about some of the technologies used to extend networks out onto the Internet and the motivations for this
+##### Learn about some of the technologies used to extend networks out onto the Internet and the motivations for this
 
-### If you want to check out the room [click here](https://tryhackme.com/room/extendingyournetwork)
+##### If you want to check out the room [click here](https://tryhackme.com/room/extendingyournetwork)
 
 #
 
 ### Table of Contents
 
 - [Extending Your Network](#extending-your-network)
-    - [Learn about some of the technologies used to extend networks out onto the Internet and the motivations for this](#learn-about-some-of-the-technologies-used-to-extend-networks-out-onto-the-internet-and-the-motivations-for-this)
-    - [If you want to check out the room click here](#if-you-want-to-check-out-the-room-click-here)
+        - [Learn about some of the technologies used to extend networks out onto the Internet and the motivations for this](#learn-about-some-of-the-technologies-used-to-extend-networks-out-onto-the-internet-and-the-motivations-for-this)
+        - [If you want to check out the room click here](#if-you-want-to-check-out-the-room-click-here)
     - [Table of Contents](#table-of-contents)
 - [Task 1 Introduction to port forwarding](#task-1-introduction-to-port-forwarding)
     - [What is the name of the device that is used to configure port forwarding?](#what-is-the-name-of-the-device-that-is-used-to-configure-port-forwarding)
