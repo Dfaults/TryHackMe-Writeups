@@ -44,7 +44,7 @@
 **Which selection will hide/disable the Search box?**
 
     Hidden
-> This option is found by right clicking the taskbar/Search/Hidden
+> 🗒️ **Note**: This option is found by right clicking the taskbar/Search/Hidden
 
 **Which selection will hide/disable the Task View button?**
 
@@ -53,7 +53,7 @@
 **Besides Clock, Volume, and Network, what other icon is visible in the Notification Area?**
 
     Action Center
-> NOTE: As of time of completing this task this answer is no longer present in the page referrenced by the room, I found this answer thanks to a fellow hacker who had already completed this room so Kudos to them for finding it.
+> 💡 **Tip**: As of time of completing this task this answer is no longer present in the page referrenced by the room, I found this answer thanks to a fellow hacker who had already completed this room so Kudos to them for finding it.
 
 # Task 4 The File System
 
