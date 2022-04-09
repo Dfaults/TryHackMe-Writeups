@@ -67,4 +67,4 @@
 
 ### Flag
 
-    Can't be provided under THMs terms for submiting writeups in their rooms.
+    ❌ Can't be provided under THMs terms for submiting writeups in their rooms.

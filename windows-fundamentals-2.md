@@ -42,14 +42,40 @@
 
 ## Task 3 Change UAC Settings
 
+**What is the command to open User Account Control Settings? (The answer is the name of the .exe file, not the full path)**
+
 ## Task 4 Computer Management
+
+**What is the command to open Computer Management? (The answer is the name of the .msc file, not the full path)**
+
+**At what time every day is the GoogleUpdateTaskMachineUA task configured to run?**
+
+**What is the name of the hidden share?**
 
 ## Task 5 System Information
 
+**What is the command to open System Information? (The answer is the name of the .exe file, not the full path)**
+
+**What is listed under System Name?**
+
+**Under Environment Variables, what is the value for ComSpec?**
+
 ## Task 6 Resource Monitor
+
+**What is the command to open Resource Monitor? (The answer is the name of the .exe file, not the full path)**
 
 ## Task 7 Command Prompt
 
+**In System Configuration, what is the full command for Internet Protocol Configuration?**
+
+**For the ipconfig command, how do you show detailed information?**
+
 ## Task 8 Registry Editor
 
+**What is the command to open the Registry Editor? (The answer is the name of  the .exe file, not the full path)**
+
 ## Task 9 Conclusion
+
+**Read above.**
+
+    No answer needed
