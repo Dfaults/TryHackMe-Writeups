@@ -38,21 +38,35 @@
 
 **What function causes path traversal vulnerabilities in PHP?**
 
+    file_get_contents
+
 ## Task 4 Local File Inclusion - LFI
 
 **Give Lab #1 a try to read /etc/passwd. What would the request URI be?**
 
+    lab1.php?file=/etc/passwd
+
 **In Lab #2, what is the directory specified in the include function?**
+
+    includes/
 
 ## Task 5 Local File Inclusion - LFI #2
 
 **Give Lab #3 a try to read /etc/passwd. What is the request look like?**
 
+    lab3.php?file=../../../../etc/passwd%00
+
 **Which function is causing the directory traversal in Lab #4?**
+
+    file_get_contents
 
 **Try out Lab #6 and check what is the directory that has to be in the input field?**
 
+    THM-profile
+
 **Try out Lab #6 and read /etc/os-release. What is the VERSION_ID value?**
+
+    12.04
 
 ## Task 6 Remote File Inclusion - RFI
 
