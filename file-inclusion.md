@@ -95,3 +95,5 @@
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
 
 **Gain RCE in Lab #Playground /playground.php with RFI to execute the hostname command. What is the output?**
+
+    lfi-vm-thm-f8c5b1a78692
