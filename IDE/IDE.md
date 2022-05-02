@@ -112,7 +112,7 @@ Also, please take care of the image file ;)
 
 When trying to acces the web server on port 62337 we can see this login page:
 
-![](../assets/2022-03-26-00-09-29.png)
+![](../assets/Codiad Login.png)
 
 ### Web dashboard credentials
 
@@ -125,7 +125,7 @@ Password: password
 
 While we explored the Codiad dashboard nikto was left running in the backgroud as a good measure and use of time in case any potential vulnerabilities were present.
 
-![](../assets/2022-03-26-00-12-03.png)
+![](../assets/Panel.png)
 
 The nikto enumeration resulted in the following:
 
