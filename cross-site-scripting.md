@@ -64,6 +64,31 @@ Where the `user.changeEmail()` would be a function within the application that w
 
 **Where in an URL is a good place to test for reflected XSS?**
 
+    Parameters
+
+Although there are different types of XSS attacks, **Reflected** XSS occurs when a malicious script is, as the name suggests, reflected off a web app to the victim browser through a link in order to activate the attack. This can be used to acquire the victims session cookie/token, this type of behavior can be seen when a web app processes the data in an unsafe way and reflects the parameter in it's response back to the user as shown below.
+
+Original unsafe URL:
+
+```http
+https://insecure-website.com/search?term=gift
+
+The response from the web app to this link would look like this:
+
+<p>You searched for: gift</p>
+```
+
+Now, when a malicious actor injects their script into the parameter field it can look like this:
+
+```http
+https://insecure-website.com/search?term=<script>/*+Bad+stuff+here...+*/</script>
+
+The response from the web app to this link would look like this:
+
+<p>You searched for: <script>/* Bad stuff here... */</script></p>
+```
+
+📰 **Note:** This sort of attack can be performed in numerous ways and creativity is key but it vulnerability will need modification depending on what sort of protection is in place on the web app itself so keep a lookout for any details that might give it away.
 ## Task 4 Stored XSS
 
 ## Task 5 DOM Based XSS
