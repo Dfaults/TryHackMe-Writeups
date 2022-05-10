@@ -89,7 +89,12 @@ The response from the web app to this link would look like this:
 ```
 
 📰 **Note:** This sort of attack can be performed in numerous ways and creativity is key but it vulnerability will need modification depending on what sort of protection is in place on the web app itself so keep a lookout for any details that might give it away.
+
 ## Task 4 Stored XSS
+
+**How are stored XSS payloads usually stored on a website?**
+
+    Database
 
 ## Task 5 DOM Based XSS
 
