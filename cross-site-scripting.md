@@ -96,10 +96,41 @@ The response from the web app to this link would look like this:
 
     Database
 
+Stored XSS
+: This type of attack is capable of stealing a victims cookie session via database poisoning in order to obtain the victims account credentials or potentially spread malware onto whoever visits the site with javascript enabled in their browser which sadly is the mayority of users.
+
 ## Task 5 DOM Based XSS
+
+**What unsafe JavaScript method is good to look for in source code?**
+
+    eval()
+
+eval()
+: The eval function is mostly used to evaluate strings and expressions according to what sort of argument the user inputs into the function. An alternative to eval is `Function()` . Just like `eval()` , `Function()` takes some expression as a string for execution, except, rather than outputting the result directly, it returns an anonymous function to you that you can call. **It is highly suggested not to use the eval function as it is insecure and can lead to XSS attacks.**
 
 ## Task 6 Blind XSS
 
+**What tool can you use to test for Blind XSS?**
+
+    xsshunter
+
+XSSHunter
+: Is a tool that will automatically capture cookies, URLs, page contents and more. This works by hosting specialized XSS probes which, upon firing, scan the page and send information about the vulnerable page to the XSS Hunter service. You can visit the [xsshunter's](https://xsshunter.com/features) site to learn more about it and sign up if you so wish.
+
+**What type of XSS is very similar to Blind XSS?**
+
+    Stored XSS
+
+📰 **Note:** Blind XSS is similar to a stored XSS (which we covered in task 4) in that your payload gets stored on the website for another user to view, but in this instance, you can't see the payload working or be able to test it against yourself first.
+
 ## Task 7 Perfecting your payload
 
+**What is the flag you received from level six?**
+
+    ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
+
 ## Task 8 Practical Example (Blind XSS)
+
+**What is the value of the staff-session cookie?**
+
+    4AB305E55955197693F01D6F8FD2D321
