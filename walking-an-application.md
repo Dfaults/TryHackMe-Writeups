@@ -37,12 +37,15 @@
 **What is the flag from the HTML comment?**
 
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
+
 **What is the flag from the secret link?**
 
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
+
 **What is the directory listing flag?**
 
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
+    
 **What is the framework flag?**
 
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room

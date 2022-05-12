@@ -2,6 +2,8 @@
 
 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/92b349206a2901c187e32ad074eae45c.png" width="200" height="200" align="left">
 
+*[IDOR]: Insecure Direct Object Reference
+
 # IDOR
 
 **Learn how to find and exploit IDOR vulnerabilities in a web application giving you access to data that you shouldn't have.**

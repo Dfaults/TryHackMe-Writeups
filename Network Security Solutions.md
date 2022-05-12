@@ -15,20 +15,20 @@
 **Table of Contents**
 
 - [Network Security Solutions](#network-security-solutions)
-- [Task 1 Introduction](#task-1-introduction)
-- [Task 2 IDS Engine Types](#task-2-ids-engine-types)
-- [Task 3 IDS/IPS Rule Triggering](#task-3-idsips-rule-triggering)
-- [Task 4 Evasion via Protocol Manipulation](#task-4-evasion-via-protocol-manipulation)
-- [Task 5 Evasion via Payload Manipulation](#task-5-evasion-via-payload-manipulation)
-- [Task 6 Evasion via Route Manipulation](#task-6-evasion-via-route-manipulation)
-- [Task 7 Evasion via Tactical DoS](#task-7-evasion-via-tactical-dos)
-- [Task 8 C2 and IDS/IPS Evasion](#task-8-c2-and-idsips-evasion)
-- [Task 9 Next-Gen Security](#task-9-next-gen-security)
-- [Task 10 Summary](#task-10-summary)
+  - [Task 1 Introduction](#task-1-introduction)
+  - [Task 2 IDS Engine Types](#task-2-ids-engine-types)
+  - [Task 3 IDS/IPS Rule Triggering](#task-3-idsips-rule-triggering)
+  - [Task 4 Evasion via Protocol Manipulation](#task-4-evasion-via-protocol-manipulation)
+  - [Task 5 Evasion via Payload Manipulation](#task-5-evasion-via-payload-manipulation)
+  - [Task 6 Evasion via Route Manipulation](#task-6-evasion-via-route-manipulation)
+  - [Task 7 Evasion via Tactical DoS](#task-7-evasion-via-tactical-dos)
+  - [Task 8 C2 and IDS/IPS Evasion](#task-8-c2-and-idsips-evasion)
+  - [Task 9 Next-Gen Security](#task-9-next-gen-security)
+  - [Task 10 Summary](#task-10-summary)
 
 ---
 
-# Task 1 Introduction
+## Task 1 Introduction
 
 **What does an Ips stand for?**
 
@@ -38,7 +38,7 @@
 
     Intrusion Detection System
 
-# Task 2 IDS Engine Types
+## Task 2 IDS Engine Types
 
 **What kind of IDS engine has a database of all known malicious packets’ contents?**
 
@@ -52,13 +52,13 @@
 
     signature-based
 
-# Task 3 IDS/IPS Rule Triggering
+## Task 3 IDS/IPS Rule Triggering
 
 **In the attached file, the logs show that a specific IP address has been detected scanning our system of IP address {IP found in your machine here}. What is the IP address running the port scan?**
 
     {IP found in your machine here}
 
-# Task 4 Evasion via Protocol Manipulation
+## Task 4 Evasion via Protocol Manipulation
 
 **We use the following Nmap command, nmap -sU -F MACHINE_IP, to launch a UDP scan against our target. What is the option we need to add to set the source port to 161?**
 
@@ -80,7 +80,7 @@
 
     -w
 
-# Task 5 Evasion via Payload Manipulation
+## Task 5 Evasion via Payload Manipulation
 
 **Using base64 encoding, what is the transformation of cat /etc/passwd?**
 
@@ -101,24 +101,26 @@
 **On the attached machine from the previous task, browse to <http://MACHINE_IP:8080>, where you can write your Linux commands. Note that no output will be returned. A command like ncat -lvnp 1234 -e /bin/bash will create a bind shell that you can connect to it from the AttackBox using ncat MACHINE_IP 1234; however, some IPS is filtering out the command we are submitting on the form. Using one of the techniques mentioned in this task, try to adapt the command typed in the form to run properly. Once you connect to the bind shell using ncat MACHINE_IP 1234, find the user’s name**
 
     redteamnetsec
-> Tip: When you run the command you won't get any obvious response in the listner terminal so just write commands directly in order to get the response needed to complete the task
 
-# Task 6 Evasion via Route Manipulation
+!!! info
+    When you run the command you won't get any obvious response in the listner terminal so just write commands directly in order to get the response needed to complete the task
+
+## Task 6 Evasion via Route Manipulation
 
     http socks4
 
-# Task 7 Evasion via Tactical DoS
+## Task 7 Evasion via Tactical DoS
 
     No answer needed
 
-# Task 8 C2 and IDS/IPS Evasion
+## Task 8 C2 and IDS/IPS Evasion
 
     jitter
 
-# Task 9 Next-Gen Security
+## Task 9 Next-Gen Security
 
     No answer needed
 
-# Task 10 Summary
+## Task 10 Summary
 
     No answer needed

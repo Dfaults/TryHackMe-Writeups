@@ -15,20 +15,20 @@
 **Table of Contents**
 
 - [Extending Your Network](#extending-your-network)
-- [Task 1 Introduction to port forwarding](#task-1-introduction-to-port-forwarding)
-- [Task 2 Firewalls 101](#task-2-firewalls-101)
-- [Task 3 Practical - Firewall](#task-3-practical---firewall)
-- [Task 4 VPN Basics](#task-4-vpn-basics)
-- [Task 5 LAN Networing Devices](#task-5-lan-networing-devices)
-- [Task 6 Practical - Network Simulator](#task-6-practical---network-simulator)
+  - [Task 1 Introduction to port forwarding](#task-1-introduction-to-port-forwarding)
+  - [Task 2 Firewalls 101](#task-2-firewalls-101)
+  - [Task 3 Practical - Firewall](#task-3-practical---firewall)
+  - [Task 4 VPN Basics](#task-4-vpn-basics)
+  - [Task 5 LAN Networing Devices](#task-5-lan-networing-devices)
+  - [Task 6 Practical - Network Simulator](#task-6-practical---network-simulator)
 
-# Task 1 Introduction to port forwarding
+## Task 1 Introduction to port forwarding
 
 **What is the name of the device that is used to configure port forwarding?**
 
     router
 
-# Task 2 Firewalls 101
+## Task 2 Firewalls 101
 
 **What layers of the OSI model do firewalls operate at?**
 
@@ -42,13 +42,13 @@
 
     stateless
 
-# Task 3 Practical - Firewall
+## Task 3 Practical - Firewall
 
 **What is the flag?**
 
 > Tip: Because of THM rules for submiting wirteups i can't straigh up give you the flag so just keep in mind when checking for which protocol is the correct one in order to get the flag you will have to use trial and error since there is no information provided on what protocol the packets are coming through, however the most common one used is HTTP
 
-# Task 4 VPN Basics
+## Task 4 VPN Basics
 
 **What VPN technology only encrypts & provides the authentication of data?**
 
@@ -58,7 +58,7 @@
 
     IPsec
 
-# Task 5 LAN Networing Devices
+## Task 5 LAN Networing Devices
 
 **What is the verb for the action that a router does?**
 
@@ -68,7 +68,7 @@
 
     layer2,layer3
 
-# Task 6 Practical - Network Simulator
+## Task 6 Practical - Network Simulator
 
 **What is the flag from the network simulator?**
 

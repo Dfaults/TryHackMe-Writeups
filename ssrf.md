@@ -2,6 +2,7 @@
 
 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/268e10b8ee0b53d1074b2a7fd5b1a789.png" width="200" height="200" align="left">
 
+*[SSRF]: Server Side Request Forgery
 # SSRF
 
 **Learn how to exploit Server-Side Request Forgery (SSRF) vulnerabilities, allowing you to access internal server resources.**
@@ -27,6 +28,8 @@
 
 ### Explanation
 
+<!-- This below line is called a markdown abbreviation or abbr for short and when the specified word is hovered over the definition refered is displayed to the user. just hover over the RCE in the paragraph and you will see it's functionality. Also note that if you place this abbreviation at the top of the document all instances of the abbreviated word will have the abbr functionality which is convinient for those who easily forget the meaning of abbriviated words that mean very long things. -->
+*[RCE]: Remote Code Execution
 Server Side Request Forgery is a web vulnerability know for allowing the attacker to intentionally make requests to a location of the attackers choosing. This can lead to giving the attacker the option of using either server side only services or conect to an external resource already prepared for the engagement, thus permiting information disclosure or potentially and RCE[^RCE]. However, there is also the blind SSRF attack in which there is no output towards the attacker. In this case the suggested course of action would be to try and get a reverse connection back in order to proceed with gaining access. A typical attack may look like this in regards to a regular HTTP request sent towards a shopping store:
 
 Regular request:
@@ -49,6 +52,8 @@ Content-Length: 118
 stockApi=http://localhost/admin
 ```
 
+<!-- This below line is called a markdown abbreviation or abbr for short and when the specified word is hovered over the definition refered is displayed to the user. just hover over the AC in the paragraph and you will see it's functionality -->
+*[AC]: Access Control
 This forged request is sent because the trust given to the system itself is far greater than the one given to any user or in this case attacker, thus there is a higher likelyhood of bypassing the normal AC[^AC] controls.
 
 **What does SSRF stand for?**
@@ -65,7 +70,8 @@ This forged request is sent because the trust given to the system itself is far 
 
     ❗ This question cannot be given in accordance with TryHackMe's rules for submitting writeups for the room
 
-> 💡**Tip:** Try slowly and calmy reading the instructions given for the challange, in order to get the flag you need to force the webserver request the site given and ignore the actual backend request. This can be done by utilizing one of the last techniques mentioned in the tutorial but pay special atention to the url that will give you the flag and don't add the "https://" when requesting the flag.
+!!! hint
+    Try slowly and calmy reading the instructions given for the challange, in order to get the flag you need to force the webserver request the site given and ignore the actual backend request. This can be done by utilizing one of the last techniques mentioned in the tutorial but pay special atention to the url that will give you the flag and don't add the "https://" when requesting the flag.
 
 ## Task 3
 
@@ -73,7 +79,8 @@ This forged request is sent because the trust given to the system itself is far 
 
     requestbin.com
 
-> 💡 **Tip:** You can also check out [Cheat Sheets](https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery) in order to see how to circumvent SSRF filters.
+!!! tip
+    You can also check out [Cheat Sheets](https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery) in order to see how to circumvent SSRF filters.
 
 ## Task 4
 

@@ -42,7 +42,8 @@
 
     Virus & Thread Protection
 
-> 💡 **Tip:** The image that the question is referring to is **_Security at a glance_**
+!!! note
+    The image that the question is referring to is **_Security at a glance_**
 
 ## Task 4 Virus & Thread Protection
 
@@ -55,14 +56,18 @@
 **If you were connected to airport Wi-Fi, what most likely will be the active firewall profile?**
 
     Public Network
-> 💡 **Tip:** When trying to answer this question try thinking about the type of network an airport wifi would belong to instead of the actual firewall profile that would be active, I know this question confused me for a second and had to re-read the information provided before getting it right.
+
+!!! note
+    When trying to answer this question try thinking about the type of network an airport wifi would belong to instead of the actual firewall profile that would be active, I know this question confused me for a second and had to re-read the information provided before getting it right.
 
 ## Task 6 App & Browser Control
 
 **Read the above.**
 
     No answer needed
-> 📘 **Note:** You should read this section carefully as this can apply to both consumers and enterprise versions of Windows and can put the machine at a higher potencial risk if misconfigured.
+
+!!! note
+    You should read this section carefully as this can apply to both consumers and enterprise versions of Windows and can put the machine at a higher potencial risk if misconfigured.
 
 ## Task 7 Device Security
 
@@ -75,7 +80,9 @@
 **What must a user insert on computers that DO NOT have a TPM version 1.2 or later?**
 
     USB startup key
-> 💡 **Tip:** You can find this answer by reading within the official Microsoft Documentation provided in the room, just look for the first instance where the TPM version is mentioned.
+
+!!! tip
+    You can find this answer by reading within the official Microsoft Documentation provided in the room, just look for the first instance where the TPM version is mentioned.
 
 ## Task 9 Volume Shadow Copy Service
 
@@ -89,7 +96,8 @@
 
     No answer needed
 
-> 📘 **Note:** This section of the room has extra information refering to further reading material for those who wish to continue learning more on how windows works, those topics are:
+!!! check
+    This section of the room has extra information refering to further reading material for those who wish to continue learning more on how windows works, those topics are:
 >
 > - [Antimalware Scan Interface](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
 > - [Credential Guard](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-manage)
